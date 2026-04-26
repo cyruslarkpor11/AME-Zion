@@ -1,0 +1,9 @@
+{
+  "deploy": {
+    "runtime": "frankenphp",
+    "startCommand": "frankenphp run --config /app/Caddyfile"
+  },
+  "build": {
+    "steps": []
+  }
+}
