@@ -2,7 +2,8 @@
 	frankenphp
 }
 
-0.0.0.0:80 {
+http://* {
+	bind 0.0.0.0
 	root * /app
 	php_server
 }
