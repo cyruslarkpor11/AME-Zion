@@ -1,9 +1,14 @@
 {
   "deploy": {
     "runtime": "frankenphp",
-    "startCommand": "frankenphp"
+    "startCommand": "sh /app/start.sh"
   },
   "build": {
-    "steps": []
+    "steps": [
+      {
+        "name": "make-start-executable",
+        "command": "chmod +x /app/start.sh"
+      }
+    ]
   }
 }
