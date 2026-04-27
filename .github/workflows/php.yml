@@ -19,6 +19,7 @@ jobs:
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
+      if: ${{ exists('composer.json') }}
 
     - name: Cache Composer packages
       id: composer-cache
