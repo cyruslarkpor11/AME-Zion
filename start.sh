@@ -1,2 +1,3 @@
 #!/bin/sh
-exec frankenphp run --config /app/Caddyfile
+cd /app
+exec frankenphp
